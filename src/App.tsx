@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import FlagGrid from "./components/FlagGrid";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <h1 className="text-center text-2xl font-bold">Patchwork Pride</h1>
       </header>
       <main className="p-4">
-        <p className="text-gray-700">Content coming soon.</p>
+        <FlagGrid />
       </main>
     </div>
   );
