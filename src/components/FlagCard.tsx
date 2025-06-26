@@ -1,16 +1,18 @@
 import React from "react";
 
-interface FlagCardProps {
+export interface Flag {
   name: string;
+  image?: string;
 }
 
-function FlagCard({ name }: FlagCardProps) {
+interface FlagCardProps {
+  flag: Flag;
+}
+
+function FlagCard({ flag }: FlagCardProps) {
   return (
-    <div className="rounded-lg border bg-white p-4 shadow">
-      <div className="h-24 rounded bg-gray-200" />
-      <p className="mt-2 text-center text-sm font-medium text-gray-700">
-        {name}
-      </p>
+    <div className="m-2 rounded-lg border bg-white p-4 transition-transform hover:scale-105 hover:shadow-lg">
+      <p className="text-center font-medium">{flag.name}</p>
     </div>
   );
 }
