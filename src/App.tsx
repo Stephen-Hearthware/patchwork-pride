@@ -3,11 +3,11 @@ import FlagGrid from "./components/FlagGrid";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-gradient-to-r from-pink-500 to-purple-600 py-4 text-white">
-        <h1 className="text-center text-2xl font-bold">Patchwork Pride</h1>
+    <div className="min-h-screen bg-gradient-to-br from-pink-100 to-indigo-100">
+      <header>
+        <h1 className="mt-8 mb-6 text-center text-3xl font-bold">Patchwork Pride</h1>
       </header>
-      <main className="p-4">
+      <main>
         <FlagGrid />
       </main>
     </div>
