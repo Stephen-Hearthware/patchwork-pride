@@ -12,7 +12,7 @@ const placeholderFlags = [
 
 function FlagGrid() {
   return (
-    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-3">
+    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 p-6 sm:grid-cols-2 md:grid-cols-3">
       {placeholderFlags.map((flag) => (
         <FlagCard key={flag.id} name={flag.name} image={flag.image} />
       ))}

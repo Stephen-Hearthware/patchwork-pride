@@ -7,13 +7,13 @@ interface FlagCardProps {
 
 function FlagCard({ name, image }: FlagCardProps) {
   return (
-    <div className="overflow-hidden rounded-md border bg-white shadow transition-transform duration-200 hover:scale-105">
+    <div className="relative overflow-hidden rounded-lg bg-white shadow transition-transform duration-200 hover:z-10 hover:scale-105">
       <img
         src={image}
         alt={`${name} flag`}
-        className="h-40 w-full rounded-t-md object-cover"
+        className="h-32 w-full object-cover"
       />
-      <p className="p-4 text-center text-sm font-medium text-gray-700">{name}</p>
+      <p className="p-3 text-center text-sm font-medium text-gray-700">{name}</p>
     </div>
   );
 }
