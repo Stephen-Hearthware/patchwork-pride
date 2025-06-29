@@ -21,7 +21,7 @@ function FlagModal({ flag, description, onClose }: FlagModalProps) {
       onClick={onClose}
     >
       <div
-        className="relative max-w-md space-y-4 rounded-3xl border-2 border-dashed border-indigo-300 bg-white/80 p-6 shadow-xl ring-2 ring-indigo-200 ring-offset-2 ring-offset-pink-50"
+        className="relative max-w-md space-y-4 rounded-3xl border-2 border-dashed border-periwinkle bg-offwhite/80 p-6 shadow-xl ring-2 ring-periwinkle ring-offset-2 ring-offset-coral"
         onClick={(e) => e.stopPropagation()}
       >
         <span className="pointer-events-none absolute -top-3 right-4 text-xl" role="presentation">✨</span>
@@ -30,8 +30,8 @@ function FlagModal({ flag, description, onClose }: FlagModalProps) {
           alt={`${flag.name} flag large`}
           className="mx-auto w-full rounded"
         />
-        <h2 className="text-center text-2xl font-bold text-indigo-800">{flag.name}</h2>
-        <p className="text-sm text-gray-700">{description}</p>
+        <h2 className="text-center text-2xl font-bold text-teal">{flag.name}</h2>
+        <p className="text-sm text-periwinkle">{description}</p>
       </div>
     </div>
   );

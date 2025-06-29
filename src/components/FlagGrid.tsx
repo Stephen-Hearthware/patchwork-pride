@@ -24,7 +24,7 @@ function FlagGrid() {
 
   return (
     <>
-      <div className="relative mx-auto max-w-4xl rounded-3xl border-2 border-dashed border-indigo-200 bg-white/50 p-8 shadow-inner">
+      <div className="relative mx-auto max-w-4xl rounded-3xl border-2 border-dashed border-periwinkle bg-offwhite/60 p-8 shadow-inner">
         <div className="pointer-events-none absolute -top-3 left-4 text-xl">🧵</div>
         <div className="pointer-events-none absolute -bottom-3 right-4 text-xl">✨</div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
