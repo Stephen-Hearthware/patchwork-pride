@@ -21,7 +21,7 @@ function FlagModal({ flag, description, onClose }: FlagModalProps) {
       onClick={onClose}
     >
       <div
-        className="max-w-md space-y-4 rounded-xl bg-white/80 p-6 shadow-lg ring-1 ring-gray-300"
+        className="max-w-md space-y-4 rounded-3xl border-2 border-dashed border-indigo-300 bg-white/80 p-6 shadow-lg ring-2 ring-indigo-200 ring-offset-2 ring-offset-pink-50"
         onClick={(e) => e.stopPropagation()}
       >
         <img
@@ -29,7 +29,7 @@ function FlagModal({ flag, description, onClose }: FlagModalProps) {
           alt={`${flag.name} flag large`}
           className="mx-auto w-full rounded"
         />
-        <h2 className="text-center text-xl font-semibold">{flag.name}</h2>
+        <h2 className="text-center text-2xl font-bold text-indigo-800">{flag.name}</h2>
         <p className="text-sm text-gray-700">{description}</p>
       </div>
     </div>
