@@ -1,5 +1,4 @@
 import React from "react";
-import FlagGrid from "./components/FlagGrid";
 import PatchworkBackground from "./components/PatchworkBackground";
 
 function App() {
@@ -12,13 +11,11 @@ function App() {
           <span role="presentation">✨</span>
           <span role="presentation">✨</span>
         </div>
-        <h1 className="text-center text-5xl font-extrabold tracking-tight text-coral">
+        <h1 className="text-center text-5xl font-extrabold tracking-tight text-coral drop-shadow-md">
           Patchwork Pride
         </h1>
       </header>
-      <main className="py-12">
-        <FlagGrid />
-      </main>
+      <main className="py-12" />
     </div>
   );
 }
