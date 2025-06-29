@@ -3,11 +3,15 @@ import React from "react";
 interface FlagCardProps {
   name: string;
   image: string;
+  onClick?: () => void;
 }
 
-function FlagCard({ name, image }: FlagCardProps) {
+function FlagCard({ name, image, onClick }: FlagCardProps) {
   return (
-    <div className="mx-auto w-full max-w-xs overflow-hidden rounded-md bg-white p-4 shadow transition-transform duration-200 hover:z-10 hover:scale-105">
+    <div
+      className="mx-auto w-full max-w-xs overflow-hidden rounded-md bg-white p-4 shadow transition-transform duration-200 hover:z-10 hover:scale-105"
+      onClick={onClick}
+    >
       <img
         src={image}
         alt={`${name} flag`}

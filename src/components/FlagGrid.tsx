@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import FlagCard from "./FlagCard";
+import FlagModal from "./FlagModal";
+import flagDetails from "../data/flagDetails";
 
 const placeholderFlags = [
   { id: 1, name: "Rainbow", image: "/flags/rainbow.svg" },
@@ -11,12 +13,31 @@ const placeholderFlags = [
 ];
 
 function FlagGrid() {
+  const [selectedFlag, setSelectedFlag] = useState<{
+    name: string;
+    image: string;
+  } | null>(null);
+
   return (
-    <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-6 py-8 md:grid-cols-2 lg:grid-cols-3">
-      {placeholderFlags.map((flag) => (
-        <FlagCard key={flag.id} name={flag.name} image={flag.image} />
-      ))}
-    </div>
+    <>
+      <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-6 py-8 md:grid-cols-2 lg:grid-cols-3">
+        {placeholderFlags.map((flag) => (
+          <FlagCard
+            key={flag.id}
+            name={flag.name}
+            image={flag.image}
+            onClick={() => setSelectedFlag(flag)}
+          />
+        ))}
+      </div>
+      {selectedFlag && (
+        <FlagModal
+          flag={selectedFlag}
+          description={flagDetails[selectedFlag.name] ?? ""}
+          onClose={() => setSelectedFlag(null)}
+        />
+      )}
+    </>
   );
 }
 
