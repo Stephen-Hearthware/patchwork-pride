@@ -1,8 +1,10 @@
 @import "tailwindcss";
-@import "@fontsource/nunito/index.css";
+@import "@fontsource/quicksand/index.css";
 
-@layer base {
-  html {
-    font-family: 'Nunito', sans-serif;
-  }
+@theme {
+  --color-coral: #F7879A;
+  --color-mustard: #EDC557;
+  --color-offwhite: #F3F6F4;
+  --color-teal: #3DADB7;
+  --color-periwinkle: #7474BD;
 }
