@@ -21,9 +21,10 @@ function FlagModal({ flag, description, onClose }: FlagModalProps) {
       onClick={onClose}
     >
       <div
-        className="max-w-md space-y-4 rounded-3xl border-2 border-dashed border-indigo-300 bg-white/80 p-6 shadow-lg ring-2 ring-indigo-200 ring-offset-2 ring-offset-pink-50"
+        className="relative max-w-md space-y-4 rounded-3xl border-2 border-dashed border-indigo-300 bg-white/80 p-6 shadow-xl ring-2 ring-indigo-200 ring-offset-2 ring-offset-pink-50"
         onClick={(e) => e.stopPropagation()}
       >
+        <span className="pointer-events-none absolute -top-3 right-4 text-xl" role="presentation">✨</span>
         <img
           src={flag.image}
           alt={`${flag.name} flag large`}

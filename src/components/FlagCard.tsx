@@ -10,7 +10,7 @@ interface FlagCardProps {
 function FlagCard({ name, image, blurb, onClick }: FlagCardProps) {
   return (
     <div
-      className="mx-auto w-full max-w-xs overflow-hidden rounded-3xl bg-white/80 p-5 shadow-sm ring-2 ring-indigo-200 ring-offset-2 ring-offset-pink-50 border border-dashed border-indigo-300 transition-transform duration-200 hover:z-10 hover:scale-105 hover:-rotate-1 hover:shadow-md"
+      className="mx-auto w-full max-w-xs overflow-hidden rounded-3xl bg-white/80 p-6 shadow-sm ring-2 ring-indigo-200 ring-offset-2 ring-offset-pink-50 border border-dashed border-indigo-300 transition-transform duration-300 hover:z-10 hover:scale-105 hover:-rotate-1 hover:shadow-lg hover:ring-indigo-300 focus:outline-none focus:ring-4 focus:ring-pink-200"
       onClick={onClick}
     >
       <img
