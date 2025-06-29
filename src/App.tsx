@@ -4,8 +4,6 @@ import PatchworkBackground from "./components/PatchworkBackground";
 function App() {
   return (
     <div className="relative min-h-screen">
-      <PatchworkBackground />
-      <div className="pointer-events-none absolute" />
       <header className="relative rounded-b-3xl bg-offwhite/70 py-8 shadow-md backdrop-blur-sm">
         <div className="pointer-events-none absolute inset-x-0 top-2 flex justify-between px-6 text-2xl">
           <span role="presentation">✨</span>
@@ -15,7 +13,9 @@ function App() {
           Patchwork Pride
         </h1>
       </header>
-      <main className="py-12" />
+      <main className="py-6">
+        <PatchworkBackground />
+      </main>
     </div>
   );
 }

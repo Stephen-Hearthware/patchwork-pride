@@ -9,7 +9,8 @@ interface FlagCardProps {
 
 function FlagCard({ name, image, blurb, onClick }: FlagCardProps) {
   return (
-    <div
+    <button
+      type="button"
       className="mx-auto w-full max-w-xs overflow-hidden rounded-3xl bg-offwhite/80 p-6 shadow-sm ring-2 ring-periwinkle ring-offset-2 ring-offset-coral border border-dashed border-periwinkle transition-transform duration-300 hover:z-10 hover:scale-105 hover:-rotate-1 hover:shadow-lg hover:ring-mustard focus:outline-none focus:ring-4 focus:ring-coral"
       onClick={onClick}
     >
@@ -23,7 +24,7 @@ function FlagCard({ name, image, blurb, onClick }: FlagCardProps) {
         {name}
       </p>
       <p className="mt-1 text-center text-xs text-periwinkle">{blurb}</p>
-    </div>
+    </button>
   );
 }
 
