@@ -4,7 +4,7 @@ Patchwork Pride is a static site that celebrates LGBTQ+ flags. It invites visito
 
 ## Planned Features
 - A grid of flags for quick browsing
-- Detail modals with histories and fun facts
+- Detail modals with histories and fun facts *(implemented)*
 - A colorful layout that highlights each flag's unique palette
 
 ## Tech Stack
