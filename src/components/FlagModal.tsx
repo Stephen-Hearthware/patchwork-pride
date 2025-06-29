@@ -17,11 +17,11 @@ function FlagModal({ flag, description, onClose }: FlagModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-20 flex items-center justify-center bg-black/40 backdrop-blur-sm"
+      className="fixed inset-0 z-20 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <div
-        className="max-w-md space-y-4 rounded-xl bg-white/90 p-6 shadow-xl ring-1 ring-gray-200"
+        className="max-w-md space-y-4 rounded-xl bg-white/80 p-6 shadow-lg ring-1 ring-gray-300"
         onClick={(e) => e.stopPropagation()}
       >
         <img
