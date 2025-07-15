@@ -38,7 +38,7 @@ const patches: Patch[] = [
   },
   {
     class:
-      'col-span-2 row-span-1 md:col-start-3 md:col-span-2 md:row-start-3 md:row-span-1',
+      'col-span-2 row-span-1 md:col-start-3 md:col-span-1 md:row-start-3 md:row-span-1',
     color: 'bg-mustard',
     border: 'border-mustard',
     name: 'Asexual',
