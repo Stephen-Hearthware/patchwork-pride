@@ -14,7 +14,7 @@ interface Patch {
 const patches: Patch[] = [
   {
     class:
-      'col-span-3 row-span-2 md:col-start-1 md:col-span-3 md:row-start-1 md:row-span-2',
+      'col-span-3 row-span-2 sm:col-start-1 sm:col-span-4 md:col-start-1 md:col-span-3 sm:row-start-1 md:row-start-1 sm:row-span-2 md:row-span-2',
     color: 'bg-coral',
     border: 'border-coral',
     name: 'Rainbow',
@@ -22,7 +22,7 @@ const patches: Patch[] = [
   },
   {
     class:
-      'col-span-3 row-span-3 md:col-start-4 md:col-span-3 md:row-start-1 md:row-span-3',
+      'col-span-3 row-span-3 sm:col-start-1 sm:col-span-4 md:col-start-4 md:col-span-3 sm:row-start-3 md:row-start-1 sm:row-span-3 md:row-span-3',
     color: 'bg-teal',
     border: 'border-teal',
     name: 'Transgender',
@@ -67,7 +67,7 @@ function PatchworkBackground() {
 
   return (
     <div
-      className="grid auto-flow-dense grid-cols-[repeat(auto-fit,_minmax(160px,_1fr))] auto-rows-[minmax(120px,_1fr)] gap-2 p-2 sm:gap-3 sm:p-4 md:p-2 md:auto-flow-row md:grid-cols-6 md:grid-rows-6 md:auto-rows-auto"
+      className="grid auto-flow-dense grid-cols-[repeat(auto-fit,_minmax(160px,_1fr))] auto-rows-[minmax(120px,_1fr)] gap-2 p-2 sm:gap-3 sm:p-4 md:p-2 md:auto-flow-row sm:grid-cols-4 md:grid-cols-6 md:grid-rows-6 md:auto-rows-auto"
     >
       {patches.map((patch) => (
         <div
